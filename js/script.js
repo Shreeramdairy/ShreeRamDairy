@@ -20,3 +20,34 @@ setInterval(() => {
     document.getElementById("slider-image").src = images[index];
 
 }, 3000);
+// Product Modal
+
+function openModal(img,title,desc){
+
+    document.getElementById("productModal").style.display="block";
+
+    document.getElementById("modalImage").src=img;
+
+    document.getElementById("modalTitle").innerHTML=title;
+
+    document.getElementById("modalDesc").innerHTML=desc;
+
+}
+
+document.querySelector(".close").onclick=function(){
+
+    document.getElementById("productModal").style.display="none";
+
+}
+
+window.onclick=function(event){
+
+    let modal=document.getElementById("productModal");
+
+    if(event.target==modal){
+
+        modal.style.display="none";
+
+    }
+
+}

@@ -15,6 +15,30 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 </head>
 
 <body>
+    <!-- Product Modal -->
+
+<div id="productModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <img id="modalImage" src="" alt="">
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDesc"></p>
+
+        <a id="orderBtn" href="https://wa.me/918160268797" target="_blank" class="btn">
+            Order on WhatsApp
+        </a>
+
+    </div>
+
+</div>
+    <a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
     
 <header>
 
@@ -222,34 +246,74 @@ Fresh Milk • Curd • Buttermilk • Paneer • Ice Cream • Shrikhand
     <img src="images/milk.png" alt="Milk">
     <h3>Fresh Milk</h3>
     <p>100% Pure and Fresh Cow Milk.</p>
-    <a href="products.html" class="btn">View Details</a>
+    <a href="#"
+onclick="openModal(
+'images/milk.png',
+'Fresh Milk',
+'100% Pure Cow Milk. Available in 500ml, 1L & 2L.'
+)"
+class="btn">
+View Details
+</a>
 </div>
 
         <div class="product-card">
     <img src="images/curd.png" alt="Curd">
     <h3>Curd</h3>
     <p>Thick, Fresh & Healthy Curd.</p>
-    <a href="products.html" class="btn">View Details</a>
+    <a href="#"
+onclick="openModal(
+'images/curd.png',
+'Curd',
+'Fresh, Thick and Healthy Curd prepared daily.'
+)"
+class="btn">
+View Details
+</a>
 </div>
         <div class="product-card">
     <img src="images/buttermilk.png" alt="Buttermilk">
     <h3>Buttermilk</h3>
     <p>Refreshing Traditional Chaas.</p>
-    <a href="products.html" class="btn">View Details</a>
+    <a href="#"
+onclick="openModal(
+'images/buttermilk.png',
+'Buttermilk',
+'Refreshing Traditional Chaas made from fresh curd.'
+)"
+class="btn">
+View Details
+</a>
 </div>
 
         <div class="product-card">
     <img src="images/paneer.png" alt="Paneer">
     <h3>Paneer</h3>
     <p>Soft, Fresh & Hygienic Paneer.</p>
-    <a href="products.html" class="btn">View Details</a>
+    <a href="#"
+onclick="openModal(
+'images/paneer.png',
+'Paneer',
+'Soft, Fresh and Hygienic Paneer prepared daily.'
+)"
+class="btn">
+View Details
+</a>
 </div>
 
         <div class="product-card">
     <img src="images/shrikhand.png" alt="Shrikhand">
     <h3>Shrikhand</h3>
     <p>Delicious Sweet Shrikhand.</p>
-    <a href="products.html" class="btn">View Details</a>
+    <a href="#"
+onclick="openModal(
+'images/shrikhand.png',
+'Shrikhand',
+'Delicious Sweet Shrikhand available in different flavours.'
+)"
+class="btn">
+View Details
+</a>
 </div>
 
 </section>
@@ -397,11 +461,10 @@ Fresh Milk • Curd • Buttermilk • Paneer • Ice Cream • Shrikhand
     </div>
 
 </footer><!-- WhatsApp Button -->
-<a href="https://wa.me/918160268797" class="whatsapp" target="_blank">
-    💬
+<a href="https://wa.me/918160268797"
+   class="whatsapp-float"
+   target="_blank">
+    <i class="fab fa-whatsapp"></i>
 </a>
-<script src="js/script.js"></script>
-
-</body>
 
 </html>
